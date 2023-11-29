@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Benutzeranmeldung</title>
-
-    <header>
-        
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li><a href="landingpage.php">Home</a></li>
-                <li><a href="register.html">Registrieren</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-
-        
-</header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style_login.css">
 </head>
-
 <body>
-    
-    <div class="container-login">
-        
-        <div class="login-box">
-            <h1>Benutzeranmeldung</h1>
-            <form action="login.php" method="post">
-                <label for="benutzername">Benutzername:</label>
-                <input type="text" id="benutzername" name="benutzername" required><br><br>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="landingpage.php">Home</a>
+            <a href="register.html">Registrieren</a>
+            <a href="login.html">Login</a>
+        </div>
 
+        <div class="login-box">
+            <h1>Login</h1>
+            <form action="login.php" method="post">
+                <div class="input-field">
+                    <label for="benutzername">Benutzername:</label>
+                    <input type="text" id="benutzername" name="benutzername" required><br><br>
+                </div>
                 <label for="passwort">Passwort:</label>
                 <input type="password" id="passwort" name="passwort" required><br><br>
 
@@ -37,7 +28,5 @@
             </form>
         </div>
     </div>
-
-
 </body>
 </html>

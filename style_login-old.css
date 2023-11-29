@@ -6,12 +6,9 @@
     top: 0;
     height: 100%;
     width: 200px;
+    background-color: #200909; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-radius: 8px;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .nav-menu a {
@@ -23,7 +20,7 @@
 }
 
 .nav-menu a:hover {
-    background-color: #f093f8; /* Hintergrundfarbe bei Hover */
+    background-color: #f8c293; /* Hintergrundfarbe bei Hover */
 }
 
 /* Style für die Login-Box */
@@ -39,16 +36,6 @@ body {
     min-height: 100vh;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000;
-  background-position: center;
-  background-size: cover;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -57,19 +44,17 @@ body::before {
 }
 
 .login-box {
-    width: 400px;
-    border-radius: 8px;
-    padding: 30px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(158, 13, 13, 0.912);
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px); /* Hinzugefügter Hover-Effekt */
+    transition: transform 0.3s ease; /* Hinzugefügter Hover-Effekt */
 }
 
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 form {
@@ -79,7 +64,6 @@ form {
 label {
     display: block;
     font-size: 1.2em;
-    color: #fff;
 }
 
 input[type="text"],
@@ -89,20 +73,19 @@ input[type="password"] {
     font-size: 1.2em;
     margin-bottom: 20px; /* Vergrößerte Lücke zwischen den Feldern */
     border: none; /* Entfernen Sie die Feldgrenzen */
-    border-bottom: 2px solid #fff; /* Fügen Sie eine untere Linie hinzu */
+    border-bottom: 2px solid #3498db; /* Fügen Sie eine untere Linie hinzu */
     background-color: transparent; /* Transparenter Hintergrund */
     transition: border-bottom 0.3s ease; /* Hinzugefügter Hover-Effekt für die untere Linie */
 }
 
-
 input[type="text"]:hover,
 input[type="password"]:hover {
-    border-bottom: 2px solid #fff; /* Ändern Sie die Linienfarbe bei Hover */
+    border-bottom: 2px solid #2980b9; /* Ändern Sie die Linienfarbe bei Hover */
 }
 
 input[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
+    background-color: #dbd834;
+    color: #e90808;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
