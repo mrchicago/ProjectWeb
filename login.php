@@ -1,9 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
 <?php
 ini_set('display_errors', 1); 
 use Authentication;
 require('Authentication.php');
 
-$auth = new Authentication("localhost", "tammo-g", "Yourpass_01", "loginforschool");
+$auth = new Authentication("localhost", "root", "neues-passwort", "Benutzeranmeldung");
+//Changes
 
 $Benutzername = $_POST["benutzername"];
 $Passwort = $_POST["passwort"];
@@ -43,3 +47,17 @@ if ($linux_output) {
 
 $auth->close();
 // $home_directory = $Benutzername;
+?>
+
+<?php
+    if(isset($_POST['redirect'])) {
+        header('Location: <link>http://172.18.77.89/homes/</link>');
+        exit;
+    }
+    ?>
+
+    <form method="post">
+        <button type="submit" name="redirect">Zur Download-Seite</button>
+    </form>
+
+</html>

@@ -19,7 +19,7 @@ if($auth->register($benutzername, $passwort, $email)){
     echo '<p>Verbindung steeeeeht</p>';
     echo '<p>Dein benutzername lautet'." ". $benutzername .'</p>' ;
     echo '<p>Deine Mail lautet'." ". $email. '</p>' ;
-    echo '<a href="login.php"> Zum Login </a>' ;
+    echo '<a href="login.html"> Zum Login </a>' ;
 }
 
 else{

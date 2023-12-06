@@ -2,54 +2,114 @@
 
 /* Link-Menü-Stil */
 .nav-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #333; /* Hintergrundfarbe des Menüs */
-    padding: 20px 0;
-    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin-left: 4.5%;
 }
+
+
+
 
 .nav-menu a {
-    display: block;
     text-decoration: none;
-    color: #fff;
-    padding: 10px 0;
-    transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
+.nav-menu li {
+    margin: 0 10px;
+  }
+
 .nav-menu a:hover {
-    background-color: #555; /* Hintergrundfarbe bei Hover */
-}
+    background-color: #88d8ff; /* Hintergrundfarbe bei Hover */
+  }
 
 
 /* Allgemeine Stildefinitionen für den gesamten Inhalt */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #3498db, #8e44ad); /* Blau zu Lila Farbverlauf */
-    color: #fff; /* Textfarbe auf Weiß setzen */
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+   
+    color: #ffffff;  /*Textfarbe auf Weiß setzen */
+    
+    /*background-image: url('Pictures/home.png');*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+   
+    
+
 }
 
 /* Header-Stil */
 header {
-    text-align: center;
-    padding: 20px;
+    padding-top: 1%;
+    padding-bottom: 200px;
+    padding-right: 0;
+    margin-right: 0%;
+    margin-left: 8%;
+    text-align: left;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: #ffffff;  /*Textfarbe auf Weiß setzen */
+    background-image: url('Pictures/banner-43.png');
+    background-repeat: no-repeat;
+    
+    background-position: top right;
+    
+       
 }
+
+
+
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
+    color: #2fbffe;
+    margin-top: 5%;
+    padding-top: 0%;
+    margin-right: 37%;
+    padding-left: 4%;
 }
 
+header h3 {
+    font-size: 0.7em;
+    color: #70708f;
+    text-align: left;
+    margin-left: 0%;
+    margin-right: 59%;
+    line-height: 1.7;
+    padding-left: 6%;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    
+    margin-top: 10px;
+    background-color: #2fbffe;;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 34%;
+    
+  }
+  
+  .login-button:hover {
+    background-color: #093d75;
+  }
 
 
 /* Login-Bereich-Stil */
 .login-section {
     text-align: center;
-    padding: 40px;
+    padding: 60px;
+    margin-top: 10px;
+    background-color: #2fbffe;
 }
 
 .login-section h2 {
@@ -62,7 +122,7 @@ header h1 {
 }
 
 .login-section button {
-    background-color: #3498db; /* Blaue Hintergrundfarbe für den Button */
+    background-color: #9bd5fb; /* Blaue Hintergrundfarbe für den Button */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -103,9 +163,10 @@ header h1 {
 /* Footer-Stil */
 footer {
     text-align: center;
+    padding-top: 50%;;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Transparenter Hintergrund für den Footer */
-    color: #fff;
+    background-color: rgba(87, 84, 84, 0.2); /* Transparenter Hintergrund für den Footer */
+    color: rgb(8, 8, 8)000;
 }
 
 /* Copyright-Text-Stil */
@@ -145,4 +206,69 @@ input[type="file"] {
 
 .file{
     background-color: #0077ab;
+}
+
+
+
+ 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    
+    text-align: center;
+    transition: transform 0.3s ease; /* Hinzugefügter Hover-Effekt */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Vergrößerte Lücke zwischen den Feldern */
+    border: none; /* Entfernen Sie die Feldgrenzen */
+    border-bottom: 2px solid #3498db; /* Fügen Sie eine untere Linie hinzu */
+    background-color: transparent; /* Transparenter Hintergrund */
+    transition: border-bottom 0.3s ease; /* Hinzugefügter Hover-Effekt für die untere Linie */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-bottom: 2px solid #2980b9; /* Ändern Sie die Linienfarbe bei Hover */
+}
+
+input[type="submit"] {
+    background-color: #dbd834;
+    color: #e90808;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
 }

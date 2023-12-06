@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Verknüpfen Sie hier Ihre CSS-Datei -->
-    <title>Data Upload & Download Service</title>
+
+    <header>
+        
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="landingpage.php">Home</a></li>
+                    <li><a href="register.html">Registrieren</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+        <h1>Welcome to OwnCloud!</h1> 
+        <h3>In der Cloud werden deine Daten sicher und geschützt aufbewahrt. Du kannst dich darauf verlassen, dass sie vor Verlust oder Beschädigung geschützt sind. Mit meinem Online-Cloud-Speicherdienst kannst du ganz einfach deine Dateien hochladen und sicher speichern. Wenn du auf meine Hauptseite gehst, findest du dort einen Login-Bereich, über den du bequem auf deine gespeicherten Daten zugreifen kannst. </h3>
+    
+        //Login
+        
+        
+        <a href="login.html" class="login-button">Login</a>
+    </header>
 
 </head>
 
 <body>
 
-    <div class="nav-menu">
-        <a href="landingpage.html">Home</a>
-        <a href="register.html">Registrieren</a>
-        <a href="login.html">Login</a>
-        <!-- <button>Logout</button> -->
-    </div>
-
-
-    <header>
-        <h1>Data Upload & Download Service</h1>
-    </header>
-
+    
     <section class="login-section">
         <?php
         session_start();
@@ -43,9 +50,7 @@
             <!-- Fügen Sie weitere Dateilinks hinzu, wie es benötigt wird -->
         </ul>';
         } else {
-            echo '<h2>Login</h2>
-        <p>Bitte melden Sie sich an, um Dateien hochzuladen und herunterzuladen.</p>
-        <a href="login.html"><button>Login</button></a>';
+           
         }
         // $username = "benutzername"; // Ersetzen Sie "benutzername" durch den tatsächlichen Benutzernamen
         $userFolder = "/home/" . $username . "/dateinspeicher"; // Ersetzen Sie den Pfad entsprechend
@@ -74,9 +79,9 @@
 
 
     </section>
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Data Upload & Download Service</p>
-    </footer>
+   
 </body>
-
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> You Data ist Hosted by OwnCloud</p>
+    </footer>
 </html>
