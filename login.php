@@ -24,10 +24,11 @@ if(array_search($usersuche, $userArray)){
 }
 else{
 $linux_command = "sudo useradd -m -p" . " " . escapeshellarg($Benutzername);
-$linux_command = "sudo useradd -m" . " " . escapeshellarg($Benutzername);
+// $linux_command = "sudo useradd -m" . " " . escapeshellarg($Benutzername);
 #// exec($linux_command, $output, $return_var);
 $linux_output = shell_exec($linux_command);
 // var_dump($linux_output);
+// if ($return_var === 0) {
 if ($linux_output) {
     die("Fehler beim Erstellen des Benutzers auf dem Linux-Server");
 } else {
